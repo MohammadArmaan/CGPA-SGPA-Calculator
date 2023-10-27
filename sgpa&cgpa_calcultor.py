@@ -1,7 +1,7 @@
 #This is a Calculator to calculate Total Marks, Percentage and SGPA/CGPA for students
 
 n=int(input('Enter the number of Subjects: '))
-sgpa1=int(input("Enter the SGPA of Previous Semester to Calculate CGPA (If in 1st Semester Press 0): "))
+sgpa1=float(input("Enter the SGPA of Previous Semester to Calculate CGPA (If in 1st Semester Press 0): "))
 semester=int(input("Enter the Current Semester you Are in (Please Press 1 to 8): "))
 lst1=[]
 lst2=[]
