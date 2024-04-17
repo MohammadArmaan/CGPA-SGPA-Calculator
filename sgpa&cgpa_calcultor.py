@@ -22,7 +22,7 @@ print("\n")
 total_marks_obtained=sum(lst2)
 percentage=(total_marks_obtained/(n*100))*100
 print(f"Total Marks: {total_marks_obtained}")
-print(f"Percentage: {percentage}\n")
+print(f"Percentage: {percentage}%\n")
 
 total_obt=0
 total_points=0
@@ -39,8 +39,14 @@ print(f"Total Points Obtained for {n} Subjects: {total_obt}")
 print(f"Total Points of {n} Subjects: {total_points}\n")
 print(f"SGPA for the {semester} Semester: {sgpa}\n")
 
-cgpa=(sgpa1+sgpa)/semester
-print(f"The CGPA of the Course: {cgpa}")
+if(semester < 3):
+    cgpa=(sgpa1+sgpa)/semester
+    print(f"The CGPA of the Course: {cgpa}")
+
+elif(semester >= 3):
+    cgpa=(sgpa1+sgpa)/2
+    print(f"The CGPA of the Course: {cgpa}")
+
 
 
 
